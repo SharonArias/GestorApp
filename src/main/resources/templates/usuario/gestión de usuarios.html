@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <!--son fundamentales pueda categorisar o posicionar en las busquedas-->
+      <title>Gestión de Usuarios </title>
+      <meta charset="iso-8559-1"/>
+      <link rel="icon" type="image/png" href="/C:\cloud computing\pagina\gestion\imagenes\icon.png" />
+      <ul class="nav">
+         <li><a href="C:\cloud computing\pagina\gestion\gestion de aula.html">Gestión de Aulas</a></li>
+         
+      </ul>
+      <div id="logotipo">
+        <img src="/C:\cloud computing\pagina\gestion\imagenes\icono.png" width="210" height="120"
+        alt="Haz clic aquí para volver a la página de inicio">
+        </div>
+      
+   </head>
+   <body>
+        <FORM method=post action="cgi-bin/script.pl">
+    Registro de un usuario
+    <TABLE BORDER=0>
+    <TR>
+    <TD>Id</TD>
+    <TD>
+    <INPUT type=number name="id">
+    </TD>
+    </TR>
+    
+    <TR>
+    <TD>Nombre</TD>
+    <TD>
+    <INPUT type=text name="nombre">
+    </TD>
+    </TR>
+
+    <TR>
+    <TD>Apellido</TD>
+    <TD>
+    <INPUT type=text name="Apellido">
+    </TD>
+    </TR>
+
+    <TR>
+    <TD>Correo</TD>
+    <TD>
+    <INPUT type=email name="correo">
+    </TD>
+    </TR>
+
+    <TR>
+    <TD>Celular</TD>
+    <TD>
+    <INPUT type=number name="celular">
+    </TD>
+    </TR>
+    
+    <TR>
+    <TD>Programa</TD>
+    <TD>
+    <INPUT type=text name="programa">
+    </TD>
+    </TR>
+    
+    
+    <TR>
+    <TD>Tipo de Usuario</TD>
+    <TD>
+    <SELECT name="ocupación">
+    <OPTION VALUE="profesor">Profesor</OPTION>
+    <OPTION VALUE="estudiante">Estudiante</OPTION>
+   
+    
+    <br>
+    <TR>
+    <TD COLSPAN=2>
+    <INPUT type="submit" value="Enviar"> 
+    </TD>
+    </TR>
+    </TABLE>
+        </FORM>
+
+        <br>
+        
+        <table class="default">
+         <tr>
+            <th>Id Usuario</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Celular</th>
+            <th>Tipo Usuario</th>
+         </tr>
+         
+         
+      </table>
+      
+      
+      <br>
+      <td><input type="button" value="Actualizar" onclick="add()"/></td>
+      <td><input type="button" value="Eliminar" onclick="deleteRow(this)"/></td>
+
+    </body>
+    <style>
+ body{
+        color:black;
+        background-color: rgb(88, 66, 214);
+        padding: 5px;
+        font-size: 18px;
+        }
+        table.default {
+        text-align:center;
+        position:center;
+        top:0px;
+        left:100px;
+        }
+    </style>
+   
+</html>

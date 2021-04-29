@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"><!--son fundamentales pueda categorisar o posicionar en las busquedas-->
+        <title>Gestión de Aula </title>
+        <meta charset="iso-8559-1"/>
+        <link rel="icon" type="image/png" href="/C:\cloud computing\pagina\gestion\imagenes\icon.png" />
+
+        <ul class="nav">
+            
+            <li><a href="C:\cloud computing\pagina\gestion\gestión de usuarios.html">Gestión de Usuarios</a></li>
+            
+        </ul>
+
+        <div id="logotipo">
+            <img src="/C:\cloud computing\pagina\gestion\imagenes\icono.png" width="210" height="120"
+            alt="Haz clic aquí para volver a la página de inicio">
+            </div>
+         
+    </head>
+    <body>
+        <FORM method=post action="cgi-bin/script.pl">
+            Registro de un usuario
+            <TABLE BORDER=0>
+            <TR>
+            <TD>Id Aula</TD>
+            <TD>
+            <INPUT type=number name="id">
+            </TD>
+            </TR>
+            
+            <TR>
+            <TD>Capacidad</TD>
+            <TD>
+            <INPUT type=text name="nombre">
+            </TD>
+            </TR>
+        
+            <TR>
+            <TD>Tipo Aula</TD>
+            <TD>
+            <INPUT type=text name="Apellido">
+            </TD>
+            </TR>
+        
+            
+            <TR>
+            <TD>Estado</TD>
+            <TD>
+            <SELECT name="Estado">
+            <OPTION VALUE="Ocupado">Ocupado</OPTION>
+            <OPTION VALUE="Disponible">Disponible</OPTION>
+           
+            
+            <br>
+            <TR>
+            <TD COLSPAN=2>
+            <INPUT type="submit" value="Enviar"> 
+            </TD>
+            </TR>
+            </TABLE>
+                </FORM>
+        
+                <br>
+                
+                <table class="default">
+                 <tr>
+                    <th>Id Aula</th>
+                    <th>Capacidad</th>
+                    <th>Tipo Aula</th>
+                    <th>Estado</th>
+                    <th>Celular</th>
+                    <th>Tipo Usuario</th>
+                 </tr>
+                 
+                 
+              </table>
+              
+              
+              <br>
+              <td><input type="button" value="Actualizar" onclick="add()"/></td>
+              <td><input type="button" value="Eliminar" onclick="deleteRow(this)"/></td>
+        
+            </body>
+            <style>
+                body{
+                       color:black;
+                       background-color: rgb(88, 66, 214);
+                       padding: 5px;
+                       font-size: 18px;
+                       }
+                       table.default {
+                       text-align:center;
+                       position:center;
+                       top:0px;
+                       left:100px;
+                       }
+                   </style>
+    
+    
+    
+</html>
